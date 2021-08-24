@@ -332,7 +332,7 @@ body {
 }
 //network
 .network {
-  margin: 80px 0 ;
+  margin: 80px 0;
   width: 100%;
   ul {
     @include MarPad();
@@ -354,7 +354,7 @@ body {
 
       a {
         text-decoration: none;
-        color: $CB;
+        color:$white;
         text-transform: uppercase;
         font-weight: 600;
         font-size: 18px;
@@ -366,12 +366,19 @@ body {
   .left-country {
     ul {
       li {
+        position: relative;
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          background: rgba(0, 0, 0, 0.2);
+        }
         &:nth-child(1) {
-          background-image: linear-gradient(
-              rgba(4, 9, 30, 0.1),
-              rgba(4, 9, 30, 0.1)
-            ),
-            url("../img/Flag-India.jpg");
+          background-image: url("../img/Flag-India.jpg");
           background-color: #cccccc;
           background-position: center;
           background-repeat: no-repeat;
@@ -379,11 +386,7 @@ body {
           height: 150px;
         }
         &:nth-child(2) {
-          background-image: linear-gradient(
-              rgba(4, 9, 30, 0.1),
-              rgba(4, 9, 30, 0.1)
-            ),
-            url("../img/255px-Flag_of_the_United_Arab_Emirates.svg.png");
+          background-image: url("../img/255px-Flag_of_the_United_Arab_Emirates.svg.png");
           background-color: #cccccc;
           background-position: center;
           background-repeat: no-repeat;
@@ -391,11 +394,7 @@ body {
           height: 150px;
         }
         &:nth-child(3) {
-          background-image: linear-gradient(
-              rgba(4, 9, 30, 0.1),
-              rgba(4, 9, 30, 0.1)
-            ),
-            url("../img/flag-Stars-and-Stripes-May-1-1795.jpg");
+          background-image: url("../img/flag-Stars-and-Stripes-May-1-1795.jpg");
           background-color: #cccccc;
           background-position: center;
           background-repeat: no-repeat;
@@ -403,11 +402,7 @@ body {
           height: 150px;
         }
         &:nth-child(4) {
-          background-image: linear-gradient(
-              rgba(4, 9, 30, 0.1),
-              rgba(4, 9, 30, 0.1)
-            ),
-            url("../img/Flag-Indonesia.jpg");
+          background-image: url("../img/Flag-Indonesia.jpg");
           background-color: #cccccc;
           background-position: center;
           background-repeat: no-repeat;
@@ -415,11 +410,7 @@ body {
           height: 150px;
         }
         &:nth-child(5) {
-          background-image: linear-gradient(
-              rgba(4, 9, 30, 0.1),
-              rgba(4, 9, 30, 0.1)
-            ),
-            url("../img/qatar.png");
+          background-image: url("../img/qatar.png");
           background-color: #cccccc;
           background-position: center;
           background-repeat: no-repeat;
