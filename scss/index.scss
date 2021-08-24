@@ -4,12 +4,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Merriweather:wght@300;400;700;900&display=swap");
 //Color Variable
 $CM: #dd6310;
-$CB: #4169e1;
+$CB: #018ee3;
 $SC: #888;
 $BC: #04aa6d;
 
 $color-background: #f5f5f5;
-$color-main: #4169e1;
+$color-main: #018ee3;
 $color-active: #fff;
 $color-link: #fff;
 
@@ -18,7 +18,7 @@ $body-bg: #c1bdba;
 $form-bg: #13232f;
 $white: #ffffff;
 
-$main: linear-gradient(90deg, $CB 10%, rgba(0, 0, 0, 0.8) 100%);
+$main: linear-gradient(90deg, $CB 58%, rgba(0, 0, 0, 0.8) 150%);
 
 $gray-light: #a0b3b0;
 $gray: #ddd;
@@ -64,13 +64,12 @@ body {
 
   h2 {
     font-size: 28px;
-    font-family: "Dosis", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-    color: linear-gradient(90deg, $CB 10%, rgba(0, 0, 0, 0.8) 100%);
+    color: $main;
 
     &::before {
       content: "";
@@ -102,7 +101,7 @@ body {
 }
 //header
 .header {
-  background: linear-gradient(90deg, $CB 10%, rgba(0, 0, 0, 0.8) 100%);
+  background: $main;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -270,7 +269,7 @@ body {
 //hero-bg
 .hero-bg {
   background: linear-gradient(rgba(65, 105, 225, 0.3), rgba(65, 105, 225, 0.3)),
-    url(../img/banner.jpg) repeat fixed 100%;
+    url(../img/hero-bgg.webp) repeat fixed 100%;
   background-size: cover;
   height: 100vh;
   .hero-content {
@@ -302,13 +301,14 @@ body {
     h2 {
       font-size: 43px;
       font-family: "Dosis", sans-serif;
+      font-weight: 800;
     }
     p {
       font-size: 20px;
     }
 
     .getStart {
-      background: linear-gradient(90deg, $CB 10%, rgba(0, 0, 0, 0.8) 100%);
+      background: $main;
       color: #fff;
       font-size: 16px;
       padding: 14px 28px;
@@ -341,13 +341,19 @@ body {
     height: 22em;
     text-align: center;
     border-radius: 3px;
+
     li {
       padding: 1.5em;
       margin: 10px;
-      background: linear-gradient(90deg, $CB 10%, rgba(0, 0, 0, 0.8) 100%);
+      box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        transform: translateY(-10px);
+      }
       a {
         text-decoration: none;
-        color: white;
+        color: $CB;
+        font-weight: 600;
         font-size: 1rem;
         cursor: pointer;
       }
@@ -357,48 +363,46 @@ body {
     ul {
       li {
         &:nth-child(1) {
-          background: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)),
-            url(../img/Flag-India.jpg) repeat fixed 100%;
+          background-image:linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.2)) , url("../img/Flag-India.jpg");
+          background-color: #cccccc;
+          background-position: center;
+          background-repeat: no-repeat;
           background-size: cover;
-          height: auto;
+          height: 150px;
         }
         &:nth-child(2) {
-          background: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)),
-            url(../img/255px-Flag_of_the_United_Arab_Emirates.svg.png) repeat
-              fixed 100%;
+          background-image: linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.2)) ,url("../img/255px-Flag_of_the_United_Arab_Emirates.svg.png");
+          background-color: #cccccc;
+          background-position: center;
+          background-repeat: no-repeat;
           background-size: cover;
-          height: auto;
+          height: 150px;
         }
         &:nth-child(3) {
-          background: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)),
-            url(../img/flag-Stars-and-Stripes-May-1-1795.jpg) repeat fixed 100%;
+          background-image: linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.2)) ,url("../img/flag-Stars-and-Stripes-May-1-1795.jpg");
+          background-color: #cccccc;
+          background-position: center;
+          background-repeat: no-repeat;
           background-size: cover;
-          height: auto;
+          height: 150px;
+        }
+        &:nth-child(4) {
+          background-image: linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.2)) ,url("../img/Flag-Indonesia.jpg");
+          background-color: #cccccc;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 150px;
+        }
+        &:nth-child(5) {
+          background-image: linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.2)) ,url("../img/qatar.png");
+          background-color: #cccccc;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 150px;
         }
       }
-    }
-  }
-  .right-country {
-    ul {
-      li {
-        &:nth-child(1) {
-          background: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)),
-            url(../img/Flag-Indonesia.jpg) repeat fixed 100%;
-          background-size: cover;
-          height: auto;
-        }
-        &:nth-child(2) {
-          background: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)),
-            url(../img/qatar.png) repeat fixed 100%;
-          background-size: cover;
-          height: auto;
-        }
-      }
-    }
-  }
-  @media (max-width: 768px) {
-    .right-country {
-      margin-top: -50px;
     }
   }
 }
@@ -469,7 +473,7 @@ body {
         color: #fff;
         position: relative;
         z-index: 2;
-        background: linear-gradient(90deg, $CB 10%, rgba(0, 0, 0, 0.8) 100%);
+        background: $main;
         border-radius: 24px;
         top: -18px;
         font-size: 14px;
@@ -494,7 +498,7 @@ body {
         transition: 0.3s;
         &:hover {
           color: white;
-          background: linear-gradient(90deg, $CB 10%, rgba(0, 0, 0, 0.8) 100%);
+          background: $main;
         }
       }
       i {
@@ -577,9 +581,10 @@ body {
   .card {
     border: solid 1px #212121;
     padding: 45px 50px 25px 60px;
-    background: linear-gradient(90deg, $CB 10%, rgba(0, 0, 0, 0.8) 100%);
+    background: $main;
     // background-color: #212121;
     border-radius: 10px;
+    border: none;
     color: #fff;
   }
 
@@ -625,9 +630,8 @@ body {
   .profile-name {
     font-size: 22px;
     left: 210px;
-    color: black;
+    color: $CB;
   }
- 
 }
 
 //contry-details
@@ -641,7 +645,7 @@ body {
     .left-align {
       text-align: center;
       button {
-        background: linear-gradient(90deg, $CB 10%, rgba(0, 0, 0, 0.8) 100%);
+        background: $main;
         padding: 8px 55px;
         color: white;
         font-size: 1rem;
@@ -770,16 +774,16 @@ footer {
         font-size: 12px;
         color: $white;
         transition: 00.3s ease-in-out;
-        &:hover{
+        &:hover {
           color: $CB;
         }
       }
     }
   }
-  .copyright-text{
+  .copyright-text {
     font-size: 12px;
     transition: 00.3s ease-in-out;
-    &:hover{
+    &:hover {
       color: $CB;
     }
   }
@@ -811,7 +815,7 @@ footer {
     display: flex;
   }
   .company__info {
-    background: linear-gradient(180deg, $CB 10%, rgba(0, 0, 0, 0.8) 100%);
+    background: $main;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -868,7 +872,7 @@ footer {
     font-weight: 600;
     background-color: #fff;
     margin: auto;
-    background: linear-gradient(180deg, $CB 10%, rgba(0, 0, 0, 0.8) 100%);
+    background: $main;
   }
 }
 
