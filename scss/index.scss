@@ -19,7 +19,8 @@ $body-bg: #c1bdba;
 $form-bg: #13232f;
 $white: #ffffff;
 
-$main: linear-gradient(90deg, $CB 58%, rgba(0, 0, 0, 0.8) 150%);
+// $main: linear-gradient(90deg, $CB 58%, rgba(0, 0, 0, 0.8) 150%);
+$main:linear-gradient(90deg, rgba(18, 24, 36, 0.9) 5%, $CB 55%);
 
 $gray-light: #a0b3b0;
 $gray: #ddd;
@@ -120,7 +121,7 @@ body {
 
   .button_container {
     position: fixed;
-    top: 5%;
+    top: 9%;
     right: 2%;
     height: $button-height;
     width: $button-width;
@@ -273,7 +274,7 @@ body {
   background: linear-gradient(rgba(65, 105, 225, 0.3), rgba(65, 105, 225, 0.3)),
     url(../img/hero-bgg.webp) repeat fixed 100%;
   background-size: cover;
-  height: 100vh;
+  height: 120vh;
   .hero-content {
     margin-top: 210px;
     text-align: center;
