@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Merriweather:wght@300;400;700;900&display=swap");
+
 //Color Variable
 $CM: #dd6310;
 $CB: #018ee3;
@@ -41,9 +42,9 @@ $button-width: 35px;
 //body
 body {
   // font-family: "Roboto", sans-serif;
-  // font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   // font-family: 'Dosis', sans-serif;
-  font-family: "Merriweather", serif;
+  // font-family: "Merriweather", serif;
   line-height: 1.6;
   letter-spacing: 1px;
   font-size: 14px;
@@ -63,6 +64,7 @@ body {
   padding-bottom: 30px;
 
   h2 {
+      font-family: 'Dosis', sans-serif;
     font-size: 28px;
     font-weight: bold;
     text-transform: uppercase;
@@ -354,7 +356,7 @@ body {
 
       a {
         text-decoration: none;
-        color:$white;
+        color: $white;
         text-transform: uppercase;
         font-weight: 600;
         font-size: 18px;
