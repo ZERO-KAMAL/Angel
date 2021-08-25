@@ -65,8 +65,7 @@ body {
 }
 
 .header {
-  background: -webkit-gradient(linear, left top, right top, color-stop(5%, rgba(18, 24, 36, 0.9)), color-stop(55%, #018ee3));
-  background: linear-gradient(90deg, rgba(18, 24, 36, 0.9) 5%, #018ee3 55%);
+  background: #121824;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -85,7 +84,7 @@ body {
 
 .header .button_container {
   position: fixed;
-  top: 9%;
+  top: 6%;
   right: 2%;
   height: 27px;
   width: 35px;
