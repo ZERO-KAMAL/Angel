@@ -940,8 +940,7 @@ footer .copyright-text:hover {
 .login .main-content {
   max-width: 600px;
   border-radius: 3px;
-  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+  background-color: #121824;
   margin: 5em auto;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -8,6 +8,7 @@ $CM: #dd6310;
 $CB: #018ee3;
 $SC: #888;
 $BC: #04aa6d;
+$BB:#121824;
 
 $color-background: #f5f5f5;
 $color-main: #018ee3;
@@ -703,7 +704,7 @@ body {
 
 //footer
 footer {
-  background-color: #121824;
+  background-color: $BB;
   padding: 40px 0px 0 0;
   margin-top: 80px;
   .social-wrap {
@@ -847,7 +848,7 @@ footer {
   .main-content {
     max-width: 600px;
     border-radius: 3px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+    background-color: $BB;
     margin: 5em auto;
     display: flex;
   }
