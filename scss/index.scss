@@ -107,7 +107,7 @@ body {
 .header {
   // background: #101820FF;
   background: #121824;
-  position: fixed;
+  // position: fixed;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -276,9 +276,9 @@ body {
   background: linear-gradient(rgba(65, 105, 225, 0.3), rgba(65, 105, 225, 0.3)),
     url(../img/hero-bgg.webp) repeat fixed 100%;
   background-size: cover;
-  height: 120vh;
+  height: 90vh;
   .hero-content {
-    margin-top: 210px;
+    margin-top: 100px;
     text-align: center;
     color: white;
     .im {
@@ -332,7 +332,7 @@ body {
     }
   }
   @media (max-width: 768px) {
-    height: 125vh;
+    height: 100vh;
   }
 }
 //network
@@ -827,6 +827,8 @@ footer {
   }
 }
 
+
+
 //login
 .login {
   position: relative;
@@ -1140,5 +1142,75 @@ footer {
 
 //pitch-page
 .pitch {
-  margin-top: 200px;
+  // .custom-select
+  // {
+  //   width: 100%;
+    
+  // }
+  .input-group{
+    // display: -webkit-inline-box !important;
+    // width: 100% !important;
+    // display: flex;
+
+    .custom-select {
+      width: 100%;
+    }
+    
+  }
+  /*--------------------------------------------------------------
+# Cta
+--------------------------------------------------------------*/
+.cta {
+  background: linear-gradient(90deg, $CB, 58%, rgba(0, 0, 0, 0.2) 150%),
+    url("../img/hero-bgg.webp") fixed center center;
+  background-size: cover;
+  padding: 80px 0;
+  margin-bottom: 60px;
+  h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  p {
+    color: #fff;
+  }
+  .cta-btn {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    &:hover {
+      background: #47b2e4;
+      border: 2px solid #47b2e4;
+    }
+  }
+  .cta-content {
+    h3 {
+      color: #37517e;
+    }
+    p {
+      line-height: 1.8;
+    }
+  }
+  @media (max-width: 1024px) {
+    .cta {
+      background-attachment: scroll;
+    }
+  }
+
+  @media (min-width: 769px) {
+    .cta .cta-btn-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+}
 }

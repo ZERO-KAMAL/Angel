@@ -66,7 +66,6 @@ body {
 
 .header {
   background: #121824;
-  position: fixed;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -261,11 +260,11 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(65, 105, 225, 0.3)), to(rgba(65, 105, 225, 0.3))), url(../img/hero-bgg.webp) repeat fixed 100%;
   background: linear-gradient(rgba(65, 105, 225, 0.3), rgba(65, 105, 225, 0.3)), url(../img/hero-bgg.webp) repeat fixed 100%;
   background-size: cover;
-  height: 120vh;
+  height: 90vh;
 }
 
 .hero-bg .hero-content {
-  margin-top: 210px;
+  margin-top: 100px;
   text-align: center;
   color: white;
 }
@@ -326,7 +325,7 @@ body {
 
 @media (max-width: 768px) {
   .hero-bg {
-    height: 125vh;
+    height: 100vh;
   }
 }
 
@@ -1287,6 +1286,78 @@ footer .copyright-text:hover {
 }
 
 .pitch {
-  margin-top: 200px;
+  /*--------------------------------------------------------------
+# Cta
+--------------------------------------------------------------*/
+}
+
+.pitch .input-group .custom-select {
+  width: 100%;
+}
+
+.pitch .cta {
+  background: -webkit-gradient(linear, left top, right top, from(#018ee3), color-stop(58%), color-stop(150%, rgba(0, 0, 0, 0.2))), url("../img/hero-bgg.webp") fixed center center;
+  background: linear-gradient(90deg, #018ee3, 58%, rgba(0, 0, 0, 0.2) 150%), url("../img/hero-bgg.webp") fixed center center;
+  background-size: cover;
+  padding: 80px 0;
+  margin-bottom: 60px;
+}
+
+.pitch .cta h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.pitch .cta p {
+  color: #fff;
+}
+
+.pitch .cta .cta-btn {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.pitch .cta .cta-btn:hover {
+  background: #47b2e4;
+  border: 2px solid #47b2e4;
+}
+
+.pitch .cta .cta-content h3 {
+  color: #37517e;
+}
+
+.pitch .cta .cta-content p {
+  line-height: 1.8;
+}
+
+@media (max-width: 1024px) {
+  .pitch .cta .cta {
+    background-attachment: scroll;
+  }
+}
+
+@media (min-width: 769px) {
+  .pitch .cta .cta .cta-btn-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 /*# sourceMappingURL=index.css.map */
