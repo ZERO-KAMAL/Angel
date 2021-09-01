@@ -8,7 +8,7 @@ $CM: #dd6310;
 $CB: #018ee3;
 $SC: #888;
 $BC: #04aa6d;
-$BB:#121824;
+$BB: #121824;
 
 $color-background: #f5f5f5;
 $color-main: #018ee3;
@@ -57,7 +57,7 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   transition: all ease 0.3s;
-  color: $CB;
+  color: #000;
   background-color: white;
 }
 
@@ -66,7 +66,7 @@ body {
   padding-bottom: 30px;
 
   h2 {
-      font-family: 'Dosis', sans-serif;
+    font-family: "Dosis", sans-serif;
     font-size: 28px;
     font-weight: bold;
     text-transform: uppercase;
@@ -107,7 +107,7 @@ body {
 .header {
   // background: #101820FF;
   background: #121824;
-  // position: fixed;
+  position: sticky;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -827,8 +827,6 @@ footer {
   }
 }
 
-
-
 //login
 .login {
   position: relative;
@@ -1142,12 +1140,13 @@ footer {
 
 //pitch-page
 .pitch {
+  margin: 80px 0;
   // .custom-select
   // {
   //   width: 100%;
-    
+
   // }
-  .input-group{
+  .input-group {
     // display: -webkit-inline-box !important;
     // width: 100% !important;
     // display: flex;
@@ -1155,9 +1154,22 @@ footer {
     .custom-select {
       width: 100%;
     }
-    
   }
-  /*--------------------------------------------------------------
+  .nav {
+    .active {
+      background: $main;
+    }
+  }
+  .form-group
+  {
+    .file {
+      position: relative;
+      overflow: hidden;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
 .cta {
@@ -1170,6 +1182,18 @@ footer {
     color: #fff;
     font-size: 28px;
     font-weight: 700;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: -8px;
+      margin: auto;
+      left: 0%;
+      right: 0%;
+      width: 80px;
+      height: 3px;
+      background-color: $BB;
+    }
   }
   p {
     color: #fff;
@@ -1213,4 +1237,59 @@ footer {
     }
   }
 }
+
+//contact
+.contact {
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 14px;
+    resize: vertical;
+  }
+
+  input[type="submit"] {
+    background: $main;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  .google-map {
+    margin: 80px 0;
+  }
+  form {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 20px;
+  }
 }
+
+//aboutUs
+.aboutUs {
+  h2 {
+    font-weight: 600;
+    border-bottom: 1px solid $body-bg;
+    margin-bottom: 35px;
+  }
+  .card {
+    button {
+      background: $main;
+      border: 1px solid transparent;
+      color: white;
+      padding: 6px 20px;
+      border-radius: 3px;
+    }
+  }
+}
+
+//signup-step-container
