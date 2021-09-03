@@ -11,6 +11,16 @@ $BC: #04aa6d;
 $BB: #121824;
 $SB: #fffafa;
 
+/* -- Stepped Progress Bar -- */
+$ProgressBase: rgb(
+  128,
+  128,
+  128
+); // Color of the upcoming steps - lightened for the connecting bar
+$ProgressComplete: rgb(35, 185, 0); // Color of completed steps
+$ProgressCurrent: rgb(65, 112, 176); // Color of the Current step
+$VerticalBreakPoint: 480px;
+
 $color-background: #f5f5f5;
 $color-main: #018ee3;
 $color-active: #fff;
@@ -102,15 +112,12 @@ body {
     font-size: 1rem !important;
     font-weight: 500;
     color: grey;
-    span{
-      
+    span {
       font-style: italic;
-     
-
     }
   }
 }
-  /*--------------------------------------------------------------
+/*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
@@ -128,7 +135,7 @@ margin-top: 72px; */
     font-weight: 600;
     color: white !important;
   }
-  a{
+  a {
     color: $CB;
     font-size: 14px;
   }
@@ -397,16 +404,16 @@ margin-top: 72px; */
   width: 100%;
   background-color: $BB;
   padding: 20px;
-  .section-title{
+  .section-title {
     margin-top: 100px;
-    h2{
-      color: $white
+    h2 {
+      color: $white;
     }
   }
- 
+
   ul {
     @include MarPad();
-    
+
     list-style: none;
     display: flex;
     flex-flow: column wrap;
@@ -431,7 +438,6 @@ margin-top: 72px; */
         font-size: 18px;
         cursor: pointer;
         z-index: 1;
-        
       }
     }
   }
@@ -451,7 +457,7 @@ margin-top: 72px; */
         }
         &:nth-child(1) {
           background-image: url("../img/Flag-India.jpg");
-          
+
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
@@ -459,7 +465,7 @@ margin-top: 72px; */
         }
         &:nth-child(2) {
           background-image: url("../img/255px-Flag_of_the_United_Arab_Emirates.svg.png");
-       
+
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
@@ -467,7 +473,7 @@ margin-top: 72px; */
         }
         &:nth-child(3) {
           background-image: url("../img/flag-Stars-and-Stripes-May-1-1795.jpg");
-          
+
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
@@ -475,7 +481,7 @@ margin-top: 72px; */
         }
         &:nth-child(4) {
           background-image: url("../img/Flag-Indonesia.jpg");
-         
+
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
@@ -483,7 +489,7 @@ margin-top: 72px; */
         }
         &:nth-child(5) {
           background-image: url("../img/qatar.png");
-         
+
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
@@ -536,7 +542,6 @@ margin-top: 72px; */
     }
   }
   @media (max-width: 768px) {
-    
   }
 }
 
@@ -1228,8 +1233,7 @@ footer {
       background: $main;
     }
   }
-  .form-group
-  {
+  .form-group {
     .file {
       position: relative;
       overflow: hidden;
@@ -1237,10 +1241,43 @@ footer {
   }
 }
 
-
 //contact
 .contact {
   margin: 80px 0;
+  .contact-box {
+    margin-bottom: 80px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 5px;
+    background: #fff;
+    transition: 0.5s;
+    &:hover {
+      transform: translateY(-10px);
+      i {
+        background-color: $CB !important;
+        color: $white !important;
+      }
+    }
+    .contact-box-inner {
+      text-align: center;
+      i {
+        color: $CB;
+        padding: 20px;
+        background: #f7fafd;
+        border-radius: 50%;
+      }
+      h5 {
+        margin-top: 20px;
+        font-size: 1rem;
+      }
+      h6 {
+        font-size: 14px;
+      }
+      .phone-number {
+        margin-top: 15px !important;
+      }
+    }
+  }
   input[type="text"],
   select,
   textarea {
@@ -1278,8 +1315,8 @@ footer {
 //aboutUs
 .aboutUs {
   margin: 80px 0;
-  .about-section{
-    p{
+  .about-section {
+    p {
       font-size: 1rem;
       text-align: center;
     }
@@ -1294,7 +1331,6 @@ footer {
     }
   }
 }
-
 
 //services
 .service {
@@ -1335,6 +1371,127 @@ footer {
       .phone-number {
         margin-top: 15px !important;
       }
+    }
+  }
+}
+//process
+.process {
+  // margin: 80px 0;
+  background-color: $BB;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  position: relative;
+  .section-title {
+    h2 {
+      margin-top: 40px;
+      color: $white;
+    }
+  }
+  .timeline {
+    width: 85%;
+    height: auto;
+    margin: auto;
+
+    ul {
+      list-style: none;
+      @include MarPad();
+      li {
+        padding: 15px;
+        background-color: #1e1f22;
+        color: white;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .timeline-content {
+      p {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 300;
+      }
+      .date {
+        font-size: 12px;
+        font-weight: 300;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .investor{
+      position: relative;
+    }
+    .enterpernur{
+      position: relative;
+    }
+    .timeline {
+      &::before {
+        content: "";
+        position:absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 100%;
+        background-color: gray;
+      }
+      ul {
+        li {
+          width: 50%;
+          position: relative;
+          margin-bottom: 40px;
+          &::before {
+            content: "";
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: gray;
+            top: -6px;
+            // left: 0%;
+          }
+          &:nth-child(odd) {
+            float: left;
+            clear: right;
+            transform: translateX(-30px);
+            border-radius: 20px 0px 20px 20px;
+            &::before {
+              transform: translate(50%, -50%);
+              right: -30px;
+            }
+          }
+          &:nth-child(even) {
+            float: right;
+            clear: left;
+            transform: translateX(30px);
+            border-radius: 0px 20px 20px 20px;
+            &::before {
+              transform: translate(-50%, -50%);
+              left: -30px;
+            }
+          }
+        }
+      }
+      .timeline-content {
+        .date {
+          position: absolute;
+          top: -30px;
+        }
+      }
+    }
+    .timeline ul li:hover::before {
+      background-color: $CB;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .timeline{
+      width: 100%;
+      margin-left: auto;
     }
   }
 }
