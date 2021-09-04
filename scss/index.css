@@ -33,7 +33,7 @@ body {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 150%);
+  color: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 200%);
 }
 
 .section-title h2::before {
@@ -73,8 +73,8 @@ body {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 58, 90, 0.5)), to(rgba(40, 58, 90, 0.5))), url("../img/banner-img.jpg") fixed center center;
-  background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.5)), url("../img/banner-img.jpg") fixed center center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 58, 90, 0.5)), to(rgba(40, 58, 90, 0.5))), url("../img/banner.jpg") fixed center center;
+  background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.5)), url("../img/banner.jpg") fixed center center;
   background-size: cover;
   padding: 80px 0;
   color: white;
@@ -91,8 +91,9 @@ margin-top: 72px; */
 }
 
 .breadcrumbs a {
-  color: #018ee3;
+  color: #121824;
   font-size: 14px;
+  font-weight: 800 !important;
 }
 
 @media (max-width: 992px) {
@@ -364,8 +365,8 @@ margin-top: 72px; */
 }
 
 .hero-bg .hero-content .getStart {
-  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(150%, rgba(0, 0, 0, 0.8)));
-  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 150%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(200%, rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 200%);
   color: #fff;
   font-size: 16px;
   padding: 14px 28px;
@@ -440,10 +441,11 @@ margin-top: 72px; */
 
 .network ul li a {
   text-decoration: none;
+  font-family: "Dosis", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 22px;
   cursor: pointer;
   z-index: 1;
 }
@@ -610,8 +612,8 @@ margin-top: 72px; */
   color: #fff;
   position: relative;
   z-index: 2;
-  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(150%, rgba(0, 0, 0, 0.8)));
-  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 150%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(200%, rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 200%);
   border-radius: 24px;
   top: -18px;
   font-size: 14px;
@@ -642,8 +644,8 @@ margin-top: 72px; */
 
 .joinCommunity .card-view .caption .btn-default:hover {
   color: white;
-  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(150%, rgba(0, 0, 0, 0.8)));
-  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 150%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(200%, rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 200%);
 }
 
 .joinCommunity .card-view .caption i {
@@ -732,8 +734,8 @@ margin-top: 72px; */
 .testimonial .card {
   border: solid 1px #212121;
   padding: 45px 50px 25px 60px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(150%, rgba(0, 0, 0, 0.8)));
-  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 150%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(200%, rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 200%);
   border-radius: 10px;
   border: none;
   color: #fff;
@@ -799,8 +801,8 @@ margin-top: 72px; */
 }
 
 .country-details .country-inner .left-align button {
-  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(150%, rgba(0, 0, 0, 0.8)));
-  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 150%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(200%, rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 200%);
   padding: 8px 55px;
   color: white;
   font-size: 1rem;
@@ -885,8 +887,8 @@ footer .social-wrap .social-links a::after {
   top: -80px;
   left: -0px;
   background: #000;
-  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(150%, rgba(0, 0, 0, 0.8)));
-  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 150%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(200%, rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 200%);
   position: absolute;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1011,8 +1013,8 @@ footer .copyright-text:hover {
 }
 
 .login .company__info {
-  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(150%, rgba(0, 0, 0, 0.8)));
-  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 150%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(200%, rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 200%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1088,8 +1090,8 @@ footer .copyright-text:hover {
   font-weight: 600;
   background-color: #fff;
   margin: auto;
-  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(150%, rgba(0, 0, 0, 0.8)));
-  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 150%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(200%, rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 200%);
 }
 
 .register {
@@ -1107,7 +1109,7 @@ footer .copyright-text:hover {
 
 .register a {
   text-decoration: none;
-  color: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 150%);
+  color: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 200%);
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
@@ -1150,14 +1152,14 @@ footer .copyright-text:hover {
 }
 
 .register .tab-group li a:hover {
-  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(150%, rgba(0, 0, 0, 0.8)));
-  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 150%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(200%, rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 200%);
   color: #ffffff;
 }
 
 .register .tab-group .active a {
-  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(150%, rgba(0, 0, 0, 0.8)));
-  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 150%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(200%, rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 200%);
   color: #ffffff;
 }
 
@@ -1186,7 +1188,7 @@ footer .copyright-text:hover {
 
 .register label .req {
   margin: 2px;
-  color: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 150%);
+  color: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 200%);
 }
 
 .register label.active {
@@ -1263,8 +1265,8 @@ footer .copyright-text:hover {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(150%, rgba(0, 0, 0, 0.8)));
-  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 150%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(200%, rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 200%);
   color: white;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -1358,8 +1360,8 @@ footer .copyright-text:hover {
 }
 
 .pitch .nav .active {
-  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(150%, rgba(0, 0, 0, 0.8)));
-  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 150%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(200%, rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 200%);
 }
 
 .pitch .form-group .file {
@@ -1431,8 +1433,8 @@ footer .copyright-text:hover {
 }
 
 .contact input[type="submit"] {
-  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(150%, rgba(0, 0, 0, 0.8)));
-  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 150%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(200%, rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 200%);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -1464,8 +1466,8 @@ footer .copyright-text:hover {
 }
 
 .aboutUs .card button {
-  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(150%, rgba(0, 0, 0, 0.8)));
-  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 150%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(200%, rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 200%);
   border: 1px solid transparent;
   color: white;
   padding: 6px 20px;
@@ -1491,19 +1493,15 @@ footer .copyright-text:hover {
           transform: translateY(-10px);
 }
 
-.service .service-box:hover span {
-  background-color: #018ee3 !important;
-  color: white !important;
-}
-
 .service .service-box .service-box-inner {
   text-align: center;
 }
 
 .service .service-box .service-box-inner span {
-  color: #888;
+  color: #ffffff;
   padding: 20px;
-  background: #fffafa;
+  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(200%, rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 200%);
   border-radius: 50%;
   font-size: 50px;
 }
@@ -1554,7 +1552,7 @@ footer .copyright-text:hover {
 .process .timeline ul li {
   padding: 15px;
   background-color: #121824;
-  color: white;
+  color: #ffffff !important;
   border-radius: 10px;
   margin-bottom: 20px;
 }
