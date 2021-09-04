@@ -1313,8 +1313,23 @@ footer {
 }
 
 //aboutUs
+
+.about-banner{
+  .breadcrumbs {
+    background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.5)),
+      url("../img/banner-8.jpg") fixed center center !important; 
+    background-size: cover !important;
+    padding: 80px 0;
+    color: white;
+    /* padding: 15px 0;
+  background: #f3f5fa;
+  min-height: 40px;
+  margin-top: 72px; */
+  }
+}
 .aboutUs {
   margin: 80px 0;
+  
   .about-section {
     p {
       font-size: 1rem;
