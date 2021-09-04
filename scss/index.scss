@@ -1377,7 +1377,7 @@ footer {
 //process
 .process {
   // margin: 80px 0;
-  background-color: $BB;
+  // background-color: $BB;
   width: 100%;
   height: 100%;
   padding: 10px;
@@ -1385,7 +1385,7 @@ footer {
   .section-title {
     h2 {
       margin-top: 40px;
-      color: $white;
+      color: $CB;
     }
   }
   .timeline {
@@ -1398,7 +1398,7 @@ footer {
       @include MarPad();
       li {
         padding: 15px;
-        background-color: #1e1f22;
+        background-color: $BB;
         color: white;
         border-radius: 10px;
         margin-bottom: 20px;

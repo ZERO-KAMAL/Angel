@@ -1526,7 +1526,6 @@ footer .copyright-text:hover {
 }
 
 .process {
-  background-color: #121824;
   width: 100%;
   height: 100%;
   padding: 10px;
@@ -1535,7 +1534,7 @@ footer .copyright-text:hover {
 
 .process .section-title h2 {
   margin-top: 40px;
-  color: #ffffff;
+  color: #018ee3;
 }
 
 .process .timeline {
@@ -1554,7 +1553,7 @@ footer .copyright-text:hover {
 
 .process .timeline ul li {
   padding: 15px;
-  background-color: #1e1f22;
+  background-color: #121824;
   color: white;
   border-radius: 10px;
   margin-bottom: 20px;
