@@ -458,7 +458,7 @@ margin-top: 72px; */
           background: rgba(54, 39, 39, 0.3);
         }
         &:nth-child(1) {
-          background: url("../img/Flag-India.jpg") ;
+          background: url("../img/Flag-India.jpg");
           background-position: center;
           background-repeat: no-repeat;
           background-size: 100% 100%;
@@ -1376,13 +1376,11 @@ footer {
   }
 }
 //process
-.process-banner{
+.process-banner {
   .breadcrumbs {
     background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.5)),
-      url("../img/banner-8.jpg") fixed center center !important;
+      url("../img/banner-8.jpg") fixed center center;
     background-size: cover;
-    height: 50vh;
-    background-position-y: -800px !important;
     padding: 80px 0;
     color: white;
     /* padding: 15px 0;
@@ -1439,16 +1437,16 @@ footer {
   }
 
   @media only screen and (min-width: 768px) {
-    .investor{
+    .investor {
       position: relative;
     }
-    .enterpernur{
+    .enterpernur {
       position: relative;
     }
     .timeline {
       &::before {
         content: "";
-        position:absolute;
+        position: absolute;
         bottom: 0%;
         left: 50%;
         transform: translateX(-50%);
@@ -1505,7 +1503,7 @@ footer {
     }
   }
   @media only screen and (max-width: 768px) {
-    .timeline{
+    .timeline {
       width: 100%;
       margin-left: auto;
     }
