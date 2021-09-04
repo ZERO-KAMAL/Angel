@@ -73,8 +73,8 @@ body {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 58, 90, 0.5)), to(rgba(40, 58, 90, 0.5))), url("../img/banner.jpg") fixed center center;
-  background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.5)), url("../img/banner.jpg") fixed center center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 58, 90, 0.5)), to(rgba(40, 58, 90, 0.5))), url("../img/banner-8.jpg") fixed center center;
+  background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.5)), url("../img/banner-8.jpg") fixed center center;
   background-size: cover;
   padding: 80px 0;
   color: white;
@@ -1456,16 +1456,12 @@ footer .copyright-text:hover {
   padding: 20px;
 }
 
-.about-banner .breadcrumbs {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 58, 90, 0.5)), to(rgba(40, 58, 90, 0.5))), url("../img/banner-8.jpg") fixed center center !important;
-  background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.5)), url("../img/banner-8.jpg") fixed center center !important;
-  background-size: cover !important;
+.contact-banner .breadcrumbs {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 58, 90, 0.5)), to(rgba(40, 58, 90, 0.5))), url("../img/banner-3.jpg") fixed center center;
+  background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.5)), url("../img/banner-3.jpg") fixed center center;
+  background-size: cover;
   padding: 80px 0;
   color: white;
-  /* padding: 15px 0;
-  background: #f3f5fa;
-  min-height: 40px;
-  margin-top: 72px; */
 }
 
 .aboutUs {
@@ -1536,8 +1532,8 @@ footer .copyright-text:hover {
 }
 
 .process-banner .breadcrumbs {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 58, 90, 0.5)), to(rgba(40, 58, 90, 0.5))), url("../img/banner-8.jpg") fixed center center;
-  background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.5)), url("../img/banner-8.jpg") fixed center center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 58, 90, 0.5)), to(rgba(40, 58, 90, 0.5))), url("../img/banner-5.jpg") fixed center center;
+  background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.5)), url("../img/banner-5.jpg") fixed center center;
   background-size: cover;
   padding: 80px 0;
   color: white;
