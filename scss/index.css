@@ -462,7 +462,7 @@ margin-top: 72px; */
   right: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(54, 39, 39, 0.3);
 }
 
 .network .left-country ul li:nth-child(1) {
@@ -1521,6 +1521,20 @@ footer .copyright-text:hover {
 
 .service .service-box .service-box-inner .phone-number {
   margin-top: 15px !important;
+}
+
+.process-banner .breadcrumbs {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 58, 90, 0.5)), to(rgba(40, 58, 90, 0.5))), url("../img/banner-8.jpg") fixed center center !important;
+  background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.5)), url("../img/banner-8.jpg") fixed center center !important;
+  background-size: cover;
+  height: 50vh;
+  background-position-y: -800px !important;
+  padding: 80px 0;
+  color: white;
+  /* padding: 15px 0;
+  background: #f3f5fa;
+  min-height: 40px;
+  margin-top: 72px; */
 }
 
 .process {
