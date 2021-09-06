@@ -117,6 +117,25 @@ body {
     }
   }
 }
+
+.getStart {
+  background: $main;
+  color: #fff;
+  font-size: 16px;
+  padding: 14px 28px;
+  width: 250px;
+  max-width: 90%;
+  margin-top: 25px;
+  border-radius: 4px;
+  outline: 0;
+  box-shadow: none !important;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  &:hover {
+    opacity: 0.8;
+  }
+}
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -376,24 +395,7 @@ margin-top: 72px; */
       font-size: 20px;
     }
 
-    .getStart {
-      background: $main;
-      color: #fff;
-      font-size: 16px;
-      padding: 14px 28px;
-      width: 250px;
-      max-width: 90%;
-      margin-top: 25px;
-      border-radius: 4px;
-      outline: 0;
-      box-shadow: none !important;
-      vertical-align: middle;
-      cursor: pointer;
-      border: 1px solid transparent;
-      &:hover {
-        opacity: 0.7;
-      }
-    }
+    
   }
   @media (max-width: 768px) {
     height: 100vh;
@@ -455,7 +457,7 @@ margin-top: 72px; */
           right: 0;
           height: 100%;
           width: 100%;
-          background: rgba(54, 39, 39, 0.3);
+          background: rgba(54, 39, 39, 0.1);
         }
         &:nth-child(1) {
           background: url("../img/Flag-India.jpg");

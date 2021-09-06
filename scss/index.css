@@ -69,6 +69,28 @@ body {
   font-style: italic;
 }
 
+.getStart {
+  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(200%, rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 200%);
+  color: #fff;
+  font-size: 16px;
+  padding: 14px 28px;
+  width: 250px;
+  max-width: 90%;
+  margin-top: 25px;
+  border-radius: 4px;
+  outline: 0;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.getStart:hover {
+  opacity: 0.8;
+}
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -364,28 +386,6 @@ margin-top: 72px; */
   font-size: 20px;
 }
 
-.hero-bg .hero-content .getStart {
-  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(200%, rgba(0, 0, 0, 0.8)));
-  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 200%);
-  color: #fff;
-  font-size: 16px;
-  padding: 14px 28px;
-  width: 250px;
-  max-width: 90%;
-  margin-top: 25px;
-  border-radius: 4px;
-  outline: 0;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-  vertical-align: middle;
-  cursor: pointer;
-  border: 1px solid transparent;
-}
-
-.hero-bg .hero-content .getStart:hover {
-  opacity: 0.7;
-}
-
 @media (max-width: 768px) {
   .hero-bg {
     height: 100vh;
@@ -462,7 +462,7 @@ margin-top: 72px; */
   right: 0;
   height: 100%;
   width: 100%;
-  background: rgba(54, 39, 39, 0.3);
+  background: rgba(54, 39, 39, 0.1);
 }
 
 .network .left-country ul li:nth-child(1) {
