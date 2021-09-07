@@ -407,124 +407,30 @@ margin-top: 72px; */
   color: #ffffff;
 }
 
-.network ul {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  height: 22em;
+.network .flags a {
+  text-decoration: none;
+  display: inline-block;
   text-align: center;
-  border-radius: 3px;
+  width: 100%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
-.network ul li {
-  padding: 1.5em;
-  margin: 10px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
-          box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-.network ul li:hover {
+.network .flags a:hover {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
 }
 
-.network ul li a {
-  text-decoration: none;
-  font-family: "Dosis", sans-serif;
-  color: #ffffff;
+.network .flags a img {
+  height: 170px;
+}
+
+.network .flags a span {
+  font-size: 1rem;
   text-transform: uppercase;
+  color: white;
   font-weight: 600;
-  font-size: 22px;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.network .left-country ul li {
-  position: relative;
-}
-
-.network .left-country ul li .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(54, 39, 39, 0.1);
-}
-
-.network .left-country ul li:nth-child(1) {
-  background: url("../img/Flag-India.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 150px;
-}
-
-.network .left-country ul li:nth-child(2) {
-  background: url("../img/255px-Flag_of_the_United_Arab_Emirates.svg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 150px;
-}
-
-.network .left-country ul li:nth-child(3) {
-  background-image: url("../img/flag-Stars-and-Stripes-May-1-1795.jpg");
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 150px;
-}
-
-.network .left-country ul li:nth-child(4) {
-  background-image: url("../img/Flag-Indonesia.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 150px;
-}
-
-.network .left-country ul li:nth-child(5) {
-  background-image: url("../img/qatar.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 150px;
-}
-
-@media (max-width: 768px) {
-  .network {
-    padding: 0px;
-  }
-  .network .left-country ul {
-    display: inline-block;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 80px;
-  }
-  .network .left-country ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 20px;
-  }
+  font-family: "Dosis", sans-serif;
 }
 
 .featured {

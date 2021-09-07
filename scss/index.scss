@@ -394,8 +394,6 @@ margin-top: 72px; */
     p {
       font-size: 20px;
     }
-
-    
   }
   @media (max-width: 768px) {
     height: 100vh;
@@ -413,106 +411,26 @@ margin-top: 72px; */
       color: $white;
     }
   }
-
-  ul {
-    @include MarPad();
-
-    list-style: none;
-    display: flex;
-    flex-flow: column wrap;
-    height: 22em;
-    text-align: center;
-    border-radius: 3px;
-
-    li {
-      padding: 1.5em;
-      margin: 10px;
-      box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
-      transition: 0.3s ease-in-out;
+  .flags {
+    a {
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+     
+      transition: 0.5s ease-in-out;
       &:hover {
         transform: translateY(-10px);
       }
-
-      a {
-        text-decoration: none;
-        font-family: "Dosis", sans-serif;
-        color: $white;
+      img{
+        height: 170px;
+      }
+      span {
+        font-size: 1rem;
         text-transform: uppercase;
+        color: white;
         font-weight: 600;
-        font-size: 22px;
-        cursor: pointer;
-        z-index: 1;
-      }
-    }
-  }
-  .left-country {
-    ul {
-      li {
-        position: relative;
-        .overlay {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          height: 100%;
-          width: 100%;
-          background: rgba(54, 39, 39, 0.1);
-        }
-        &:nth-child(1) {
-          background: url("../img/Flag-India.jpg");
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-          height: 150px;
-        }
-        &:nth-child(2) {
-          background: url("../img/255px-Flag_of_the_United_Arab_Emirates.svg.png");
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-          height: 150px;
-        }
-        &:nth-child(3) {
-          background-image: url("../img/flag-Stars-and-Stripes-May-1-1795.jpg");
-          background-size: 100% 100%;
-          background-position: center;
-          background-repeat: no-repeat;
-          // background-size: cover;
-          height: 150px;
-        }
-        &:nth-child(4) {
-          background-image: url("../img/Flag-Indonesia.jpg");
-
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-          height: 150px;
-        }
-        &:nth-child(5) {
-          background-image: url("../img/qatar.png");
-
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-          height: 150px;
-        }
-      }
-    }
-  }
-  @media (max-width: 768px) {
-    padding: 0px;
-    .left-country {
-      ul {
-        display: inline-block;
-        flex-direction: row-reverse;
-        width: 100%;
-        height: 100%;
-        margin-bottom: 80px;
-        li {
-          display: flex;
-          margin-top: 20px;
-        }
+        font-family: "Dosis", sans-serif;
       }
     }
   }
