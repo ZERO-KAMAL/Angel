@@ -1580,6 +1580,11 @@ footer .copyright-text:hover {
   width: 100%;
 }
 
+.uncheck {
+  text-decoration: line-through;
+  color: #888 !important;
+}
+
 .snip1404 img {
   position: absolute;
   left: 0;
@@ -1640,6 +1645,7 @@ footer .copyright-text:hover {
 }
 
 .snip1404 .plan-cost {
+  font-family: "Open Sans", sans-serif;
   padding: 40px 20px 10px;
   text-align: right;
 }

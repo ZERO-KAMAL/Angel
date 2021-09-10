@@ -1453,6 +1453,10 @@ footer {
   // max-width: 1000px;
   // margin: 50px 10px;
 }
+.uncheck{
+  text-decoration: line-through;
+  color: #888 !important;
+}
 .snip1404 img {
   position: absolute;
   left: 0;
@@ -1504,6 +1508,7 @@ footer {
   border-color: rgba($CB ,1) transparent transparent;
 }
 .snip1404 .plan-cost {
+  font-family: "Open Sans", sans-serif;
   padding: 40px 20px 10px;
   text-align: right;
 }
