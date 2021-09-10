@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Merriweather:wght@300;400;700;900&display=swap");
 /* -- Stepped Progress Bar -- */
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.6;
@@ -1569,6 +1570,164 @@ footer .copyright-text:hover {
   .process .timeline {
     width: 100%;
     margin-left: auto;
+  }
+}
+
+.snip1404 {
+  font-family: "Dosis", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  width: 100%;
+}
+
+.snip1404 img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+.snip1404 .plan {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  background-color: #018ee3;
+}
+
+.snip1404 .plan:first-of-type {
+  border-radius: 8px 0 0 8px;
+}
+
+.snip1404 .plan:last-of-type {
+  border-radius: 0 8px 8px 0;
+}
+
+.snip1404 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.snip1404 header {
+  background-color: #018ee3;
+  color: #ffffff;
+}
+
+.snip1404 .plan-title {
+  background-color: #121824;
+  position: relative;
+  margin: 0;
+  padding: 20px 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.snip1404 .plan-title:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 40px 300px 0 0;
+  border-color: #121824 transparent transparent;
+}
+
+.snip1404 .plan-cost {
+  padding: 40px 20px 10px;
+  text-align: right;
+}
+
+.snip1404 .plan-price {
+  font-weight: 600;
+  font-size: 3em;
+}
+
+.snip1404 .plan-type {
+  opacity: 0.8;
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+
+.snip1404 .plan-features {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.snip1404 .plan-features li {
+  padding: 8px 5%;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.snip1404 .plan-features i {
+  margin-right: 8px;
+  color: #121824;
+}
+
+.snip1404 .plan-select {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+}
+
+.snip1404 .plan-select a {
+  background-color: #121824;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 0.75em;
+  font-weight: 600;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: inline-block;
+}
+
+.snip1404 .plan-select a:hover {
+  background-color: rgba(18, 24, 36, 0.8);
+}
+
+.snip1404 .plan:hover {
+  margin-top: -10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+          box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  z-index: 1;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.snip1404 .plan .plan-select {
+  padding: 30px 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .snip1404 .plan {
+    width: 100%;
+  }
+  .snip1404 .plan-title,
+  .snip1404 .plan-select a {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .snip1404 .plan-select,
+  .snip1404 .featured .plan-select {
+    padding: 20px;
+  }
+  .snip1404 .featured {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .snip1404 .plan {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=index.css.map */
