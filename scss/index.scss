@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Merriweather:wght@300;400;700;900&display=swap");
-
+@import url("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
 //Color Variable
 $CM: #dd6310;
 $CB: #018ee3;
@@ -1443,7 +1443,7 @@ footer {
 
 //pricising table
 
-@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
 
 .snip1404 {
   font-family: "Dosis", sans-serif;
@@ -1464,7 +1464,8 @@ footer {
   margin: 0;
   position: relative;
   overflow: hidden;
-  background-color: $CB;
+  background-color: $white;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 .snip1404 .plan:first-of-type {
   border-radius: 8px 0 0 8px;
@@ -1479,13 +1480,14 @@ footer {
   transition: all 0.25s ease-out;
 }
 .snip1404 header {
-  background-color: $CB;
-  color: #ffffff;
+  // background-color: $CB;
+  color: $BB;
 }
 .snip1404 .plan-title {
-  background-color: $BB;
+  background: $main;
   position: relative;
   margin: 0;
+  color: $white;
   padding: 20px 20px 0;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -1499,7 +1501,7 @@ footer {
   height: 0;
   border-style: solid;
   border-width: 40px 300px 0 0;
-  border-color: rgba($BB ,1) transparent transparent;
+  border-color: rgba($CB ,1) transparent transparent;
 }
 .snip1404 .plan-cost {
   padding: 40px 20px 10px;
@@ -1520,6 +1522,7 @@ footer {
 .snip1404 .plan-features li {
   padding: 8px 5%;
   align-items: baseline;
+ color: $CB;
 }
 .snip1404 .plan-features i {
   margin-right: 8px;
@@ -1531,7 +1534,7 @@ footer {
   text-align: center;
 }
 .snip1404 .plan-select a {
-  background-color: $BB;
+  background: $main;
   color: #ffffff;
   text-decoration: none;
   padding: 12px 20px;
@@ -1543,11 +1546,11 @@ footer {
   display: inline-block;
 }
 .snip1404 .plan-select a:hover {
-  background-color: rgba($BB, 0.8);
+  background-color: rgba($CB, 0.8);
 }
 .snip1404 .plan:hover {
   margin-top: -10px;
-  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  
   z-index: 1;
   border-radius: 8px;cursor:pointer;
 }

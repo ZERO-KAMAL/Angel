@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Merriweather:wght@300;400;700;900&display=swap");
+@import url("https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
 /* -- Stepped Progress Bar -- */
-@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.6;
@@ -1592,7 +1592,9 @@ footer .copyright-text:hover {
   margin: 0;
   position: relative;
   overflow: hidden;
-  background-color: #018ee3;
+  background-color: #ffffff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+          box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
 .snip1404 .plan:first-of-type {
@@ -1611,14 +1613,15 @@ footer .copyright-text:hover {
 }
 
 .snip1404 header {
-  background-color: #018ee3;
-  color: #ffffff;
+  color: #121824;
 }
 
 .snip1404 .plan-title {
-  background-color: #121824;
+  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(200%, rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 200%);
   position: relative;
   margin: 0;
+  color: #ffffff;
   padding: 20px 20px 0;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -1633,7 +1636,7 @@ footer .copyright-text:hover {
   height: 0;
   border-style: solid;
   border-width: 40px 300px 0 0;
-  border-color: #121824 transparent transparent;
+  border-color: #018ee3 transparent transparent;
 }
 
 .snip1404 .plan-cost {
@@ -1664,6 +1667,7 @@ footer .copyright-text:hover {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  color: #018ee3;
 }
 
 .snip1404 .plan-features i {
@@ -1678,7 +1682,8 @@ footer .copyright-text:hover {
 }
 
 .snip1404 .plan-select a {
-  background-color: #121824;
+  background: -webkit-gradient(linear, left top, right top, color-stop(58%, #018ee3), color-stop(200%, rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(90deg, #018ee3 58%, rgba(0, 0, 0, 0.8) 200%);
   color: #ffffff;
   text-decoration: none;
   padding: 12px 20px;
@@ -1691,13 +1696,11 @@ footer .copyright-text:hover {
 }
 
 .snip1404 .plan-select a:hover {
-  background-color: rgba(18, 24, 36, 0.8);
+  background-color: rgba(1, 142, 227, 0.8);
 }
 
 .snip1404 .plan:hover {
   margin-top: -10px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-          box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   z-index: 1;
   border-radius: 8px;
   cursor: pointer;
